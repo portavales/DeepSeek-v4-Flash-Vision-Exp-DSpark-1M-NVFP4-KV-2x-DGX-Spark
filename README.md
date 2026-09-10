@@ -1,5 +1,7 @@
 # DeepSeek-V4-Flash-Vision-Exp (DSpark) on DGX Spark — TP2 (2 nodes) or TP4 (4 nodes), 1M context, NVFP4 KV
 
+> **2026-09-10: DeepSeek-V4.1-Flash is out.** The four-Spark vLLM TP4 recipe for it (Engram-on-disk patch, sm121 kernel build, launchers, measured numbers) lives in its own repo: **[tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark](https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark)**. This repo stays the DeepSeek-V4-Flash-Vision-Exp (DS4) recipe.
+
 **Current recipe: see [`CURRENT.md`](CURRENT.md).** That file, not this page, is the source of truth.
 
 **Launchers:** [`launchers/ds4-vision-tp2.sh <0|1>`](launchers/ds4-vision-tp2.sh) — ranks 1 (bluey) then 0 (asusi, head) · [`launchers/ds4-vision-tp4.sh <0|1|2|3>`](launchers/ds4-vision-tp4.sh) — ranks 3, 2, 1, then 0 (asusi, head). Both serve `:8888` as **`deepseek-v4-flash-dspark`**.
